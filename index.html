@@ -8,7 +8,7 @@
   <meta property="og:description" content="魷魚遊戲 | 不需要舔椪糖，不需要玩命，除了這些，台灣也有台灣的魷魚遊戲，玩? 還是不玩?" />
   <meta name="description" content="魷魚遊戲 | 不需要舔椪糖，不需要玩命，除了這些，台灣也有台灣的魷魚遊戲，玩? 還是不玩?" />
   <meta name="author" content="Andy" />
-  <link rel="shortcut icon" href="./image/vuegame.ico"/>
+  <link rel="shortcut icon" href="./image/vuegame.ico" />
   <title>vue3 90s 魷魚遊戲 ○△ ☐</title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap'>
   <link rel="stylesheet" href="./style.css">
@@ -22,7 +22,12 @@
     <div class="cardtable">
       <div class="card" @click="transCard(card)" v-for="card in remderCards" :key="card.id">
         <div class="front" :class="{transfront: card.ispair}">
-          <span v-if="card.ispair" :style="{color: card.cardColor}">{{ card.cardText }}</span>
+          <template v-if="card.ispair">
+            <span :style="{color: card.cardColor}">
+              {{card.cardColor }}
+              {{ card.cardText }}
+            </span>
+          </template>
         </div>
         <div class="back" :class="{transback: card.ispair}"></div>
       </div>
