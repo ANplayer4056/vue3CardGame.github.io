@@ -69,22 +69,22 @@ createApp({
     
     // 卡片花色資料建立
     const cardlist = ref([
-      { id: 1 , cardText: '♠1' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 5 , cardText: '♠1' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 7 , cardText: '♥2' , cardColor: 'red' , ispair: false, sortIdx: 0},
-      { id: 4 , cardText: '♥2' , cardColor: 'red' , ispair: false, sortIdx: 0},
-      { id: 2 , cardText: '♦7' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 14 , cardText: '♦7' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 12 , cardText: '♣7' , cardColor: 'red' , ispair: false, sortIdx: 0},
-      { id: 8 , cardText: '♣7' , cardColor: 'red' , ispair: false, sortIdx: 0},
-      { id: 9, cardText: '♠9' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 3, cardText: '♠9' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 16, cardText: '♥J' , cardColor: 'red' , ispair: false, sortIdx: 0},
-      { id: 11, cardText: '♥J' , cardColor: 'red' , ispair: false, sortIdx: 0},
-      { id: 10, cardText: '♦Q' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 15, cardText: '♦Q' , cardColor: 'black' , ispair: false, sortIdx: 0},
-      { id: 6, cardText: '♣K' , cardColor: 'red' , ispair: false, sortIdx: 0},
-      { id: 13, cardText: '♣K' , cardColor: 'red' , ispair: false, sortIdx: 0},
+      { id: 1 , cardText: '♠1' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 5 , cardText: '♠1' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 7 , cardText: '♥2' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
+      { id: 4 , cardText: '♥2' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
+      { id: 2 , cardText: '♦7' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 14 , cardText: '♦7' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 12 , cardText: '♣7' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
+      { id: 8 , cardText: '♣7' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
+      { id: 9, cardText: '♠9' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 3, cardText: '♠9' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 16, cardText: '♥J' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
+      { id: 11, cardText: '♥J' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
+      { id: 10, cardText: '♦Q' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 15, cardText: '♦Q' , cardColor: '#111' , ispair: false, sortIdx: 0},
+      { id: 6, cardText: '♣K' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
+      { id: 13, cardText: '♣K' , cardColor: '#ff3939' , ispair: false, sortIdx: 0},
     ])
     
     // 產生隨機順序
