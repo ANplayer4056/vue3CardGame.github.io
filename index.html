@@ -21,7 +21,7 @@
 
     <div class="cardtable">
       <div class="card" @click="transCard(card)" v-for="card in remderCards" :key="card.id">
-        <div class="front" :class="{transfront: card.ispair}" :style="{color: card.cardColor}">
+        <div class="front" :class="{transfront: card.ispair}">
           <span v-if="card.ispair" :style="{color: card.cardColor}">{{ card.cardText }}</span>
         </div>
         <div class="back" :class="{transback: card.ispair}"></div>
