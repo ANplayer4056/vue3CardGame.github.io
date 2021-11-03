@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:title" content="vue3  90s 魷魚遊戲 ○△ ☐" />
+  <meta property="og:image" content="./image/vue3_card_game.JPG" />
+  <meta property="og:description" content="魷魚遊戲 | 不需要舔椪糖，不需要玩命，除了這些，台灣也有台灣的魷魚遊戲，玩? 還是不玩?" />
+  <meta name="description" content="魷魚遊戲 | 不需要舔椪糖，不需要玩命，除了這些，台灣也有台灣的魷魚遊戲，玩? 還是不玩?" />
+  <meta name="author" content="Andy" />
+  <link rel="shortcut icon" href="./image/vuegame.ico"/>
+  <title>vue3 90s 魷魚遊戲 ○△ ☐</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="app">
+
+    <div class="cardtable">
+      <div class="card" @click="transCard(card)" v-for="card in remderCards" :key="card.id">
+        <div class="front" :class="{transfront: card.ispair}" :style="{color: card.cardColor}">
+          <span v-if="card.ispair">{{ card.cardText }}</span>
+        </div>
+        <div class="back" :class="{transback: card.ispair}"></div>
+      </div>
+    </div>
+    <div class="playagain" v-cloak v-if="count === 8">
+      <div class="title">
+        <div class="circle"></div>
+        <div class="triangle"></div>
+        <div class="square"></div>
+      </div>
+      <button class="replay" @click="restartGame">再玩一局</button>
+    </div>
+
+  </div>
+  <!-- partial -->
+  <script src='https://kit.fontawesome.com/265ac1e79e.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js'></script>
+  <script type="module" src="./script.js"></script>
+
+</body>
+
+</html>
